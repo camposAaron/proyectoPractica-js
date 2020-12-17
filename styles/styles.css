@@ -4,6 +4,16 @@
     padding: 0px;
 }
 
+/*Font web symbols*/
+@font-face{
+    font-family: "web-simbols";
+    src:url(../fonts/WebSymbols-Regular.otf);
+}
+
+.icon{
+    font-family: "web-simbols";
+}
+
 body{
     background: url(../img/img/hojas.jpg);
     background-attachment: fixed;
@@ -41,35 +51,96 @@ body{
     background-color: #20613D;
     color: white;
     margin-bottom:30px;
-    transition:  all 200ms;
+    transition:  all 300ms;
 }
+
+
 
 #logo:hover{
     box-shadow: 0px 0px 4px #2c2;
     cursor:pointer;
+    animation: backgroundGradientAnimation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
 }
 
-#find-text{
+@keyframes backgroundGradientAnimation{
+    0%{
+        background: repeating-linear-gradient(0deg, #067506,#222 1%);
+    }10%{
+        background: repeating-linear-gradient(10deg, #067506, #222 1%);
+    }15%{
+        background: repeating-linear-gradient(15deg, #067506, #222 2%);
+    }20%{
+        background: repeating-linear-gradient(20deg, #067506, #222 1%);
+    }25%{
+        background: repeating-linear-gradient(25deg, #067506, #222 1%);
+    }30%{
+        background: repeating-linear-gradient(30deg, #067506, #222 1%);
+    }35%{
+        background: repeating-linear-gradient(35deg, #067506, #222 10%);
+    }40%{
+        background: repeating-linear-gradient(40deg, #067506, #222 1%);
+    }45%{
+        background: repeating-linear-gradient(45deg, #067506, #222 1%);
+    }50%{
+        background: repeating-linear-gradient(50deg, #067506, #222 5%);
+    }55%{
+        background: repeating-linear-gradient(0deg, #067506, #222 1%);
+    }60%{
+        background: repeating-linear-gradient(10deg, #067506, #222 1%);
+    }65%{
+        background: repeating-linear-gradient(15deg, #067506, #222 20%);
+    }70%{
+        background: repeating-linear-gradient(20deg, #067506, #222 1%);
+    }75%{
+        background: repeating-linear-gradient(25deg, #067506, #222 1%);
+    }80%{
+        background: repeating-linear-gradient(30deg, #067506, #222 1%);
+    }85%{
+        background: repeating-linear-gradient(35deg, #067506, #222 1%);
+    }90%{
+        background: repeating-linear-gradient(40deg, #067506, #222 10%);
+    }95%{
+        background: repeating-linear-gradient(45deg, #067506, #222 11%);
+    }100%{
+        background: repeating-linear-gradient(50deg, #067506, #222 12%);
+    }
+}
+
+
+#Buscador{
     display: block;
+    margin: 20px;   
     width: 25%;
     float:  right;
-    height: 45px;
-    margin: 20px;
-
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 2px #555;
 
+}
+
+#Buscador #find-text{
+    height: 45px;
+    width: 80%;
+    background-color: #f2f2f2;
+    border: none;
     text-align: left;
     padding-left: 8px;
     color: black;
 }
 
 
-#find-text:focus{
+#Buscador:focus-within{
     background-color: #f2f2f2;
     border: 1px solid gray;
-    box-shadow: 0px 0px 2px #222;
+    box-shadow: 0px 0px 4px #222;
+}
+
+#Buscador .icon{
+    color: rgb(31, 141, 77);
 }
 
 /*MENU*/
@@ -243,7 +314,7 @@ nav ul > li > a{
 
 #login form input[type="text"],
 input[type="password"]{
-    width: 80%;
+    width: 100%;
     margin-top:10px;
     margin-bottom: 10px;
     height: 25px;
@@ -269,6 +340,33 @@ input[type="password"]:focus{
     width: 60px;
     height: 30px;
     border: 1px solid #222;
-    color:white;
-    
+    color:white; 
 }
+
+footer{
+    width: 100%;
+    margin-top: 2px;
+    text-align: center;
+    background: #0c2210b3;
+    height: 80px;
+    box-shadow: 0px 0px 1px #ccc ;
+}
+
+footer #Author{
+    width: 100%;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+footer #social{
+    width: 100%;
+}
+
+footer #Social img{
+    width: 35px;
+}
+
+/*ANIMACION*/
+
