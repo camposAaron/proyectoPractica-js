@@ -362,10 +362,20 @@ footer #Author{
 
 footer #social{
     width: 100%;
+    
 }
 
 footer #Social img{
     width: 35px;
+}
+
+
+.bx-wrapper{
+    margin-top: 20px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
 }
 
 /*ANIMACION*/
