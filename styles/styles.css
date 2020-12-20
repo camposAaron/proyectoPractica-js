@@ -14,10 +14,7 @@
     font-family: "web-simbols";
 }
 
-body{
-    background: url(../img/img/hojas.jpg);
-    background-attachment: fixed;
-}
+
 
 .clearfix{
     float: none;
@@ -47,8 +44,6 @@ body{
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    border: 1px solid #20613D;
-    background-color: #20613D;
     color: white;
     margin-bottom:30px;
     transition:  all 300ms;
@@ -57,57 +52,7 @@ body{
 
 
 #logo:hover{
-    box-shadow: 0px 0px 4px #2c2;
     cursor:pointer;
-    animation: backgroundGradientAnimation;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-   
-}
-
-@keyframes backgroundGradientAnimation{
-    0%{
-        background: repeating-linear-gradient(0deg, #067506,#222 1%);
-    }10%{
-        background: repeating-linear-gradient(10deg, #067506, #222 1%);
-    }15%{
-        background: repeating-linear-gradient(15deg, #067506, #222 2%);
-    }20%{
-        background: repeating-linear-gradient(20deg, #067506, #222 1%);
-    }25%{
-        background: repeating-linear-gradient(25deg, #067506, #222 1%);
-    }30%{
-        background: repeating-linear-gradient(30deg, #067506, #222 1%);
-    }35%{
-        background: repeating-linear-gradient(35deg, #067506, #222 10%);
-    }40%{
-        background: repeating-linear-gradient(40deg, #067506, #222 1%);
-    }45%{
-        background: repeating-linear-gradient(45deg, #067506, #222 1%);
-    }50%{
-        background: repeating-linear-gradient(50deg, #067506, #222 5%);
-    }55%{
-        background: repeating-linear-gradient(0deg, #067506, #222 1%);
-    }60%{
-        background: repeating-linear-gradient(10deg, #067506, #222 1%);
-    }65%{
-        background: repeating-linear-gradient(15deg, #067506, #222 20%);
-    }70%{
-        background: repeating-linear-gradient(20deg, #067506, #222 1%);
-    }75%{
-        background: repeating-linear-gradient(25deg, #067506, #222 1%);
-    }80%{
-        background: repeating-linear-gradient(30deg, #067506, #222 1%);
-    }85%{
-        background: repeating-linear-gradient(35deg, #067506, #222 1%);
-    }90%{
-        background: repeating-linear-gradient(40deg, #067506, #222 10%);
-    }95%{
-        background: repeating-linear-gradient(45deg, #067506, #222 11%);
-    }100%{
-        background: repeating-linear-gradient(50deg, #067506, #222 12%);
-    }
 }
 
 
@@ -139,9 +84,6 @@ body{
     box-shadow: 0px 0px 4px #222;
 }
 
-#Buscador .icon{
-    color: rgb(31, 141, 77);
-}
 
 /*MENU*/
 
@@ -163,12 +105,7 @@ nav ul li{
     cursor: pointer;
 }
 
-nav ul li:hover{
-    float: left;
-    padding: 10px;
-   
-    background-color: #20613D;
-}
+
 
 nav ul > li > a{
     font-family: verdana;
@@ -228,7 +165,7 @@ nav ul > li > a{
     display: block;
     position: absolute;
     padding: 10px;
-    background-color: rgb(6, 117, 6);
+
     font-family: arial;
     font-size: 12px;
      
@@ -237,7 +174,6 @@ nav ul > li > a{
     color: white;
     height: 10px;
     line-height: 10px;
-    border: 1px solid  rgb(3, 77, 3);
     right: 5%;
     top:5px;
     cursor: pointer;
@@ -265,9 +201,7 @@ nav ul > li > a{
     margin-top: 50px;
     margin-bottom: 10px;
     line-height: 10px;
-    text-align: center;
-    background:repeating-linear-gradient(18deg, #067506, transparent 1%);
-    
+    text-align: center; 
 }
 
 #about h4 span{
@@ -295,8 +229,6 @@ nav ul > li > a{
     text-align: center;
     line-height: 10px;
     margin-bottom: 20px;
-    background:  repeating-linear-gradient(18deg, #067506, transparent 1%);
-
 }
 
 #login form{
@@ -326,13 +258,7 @@ input[type="password"]{
     color: black;
 }
 
-#login form input[type="text"]:focus,
-input[type="password"]:focus{
 
-    background-color: #f2f2f2;
-    border: 1px solid #067506;
-    box-shadow: 0px 0px 2px #20613D; 
-}
 
 #login form input[type="submit"]{
     background-color: #333;
@@ -378,5 +304,34 @@ footer #Social img{
     height: 250px !important;
 }
 
-/*ANIMACION*/
+/*Selector de tema*/
+#selector-theme{
+    display:block;
+    position: fixed;
+    height: 100px;
+    width: 3%;
+    border: 1px solid rgba(238, 217, 217, 0.37);
+    background-color:rgba(44, 38, 38, 0.37);
+    left: 0%;
+    top:45%;
+}
+
+#to-green{
+    background-color: #20613D;
+}
+
+#to-blue{
+    background-color:  #2b76a1;
+}
+
+#to-red{
+    background-color: #e63b3b;
+}
+
+#to-green,#to-blue,#to-red{
+    border:1px solid whitesmoke;
+    height: calc(85%/3);
+    margin:2px;
+    cursor: pointer;
+}
 

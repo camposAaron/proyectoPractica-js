@@ -1,0 +1,44 @@
+body{
+    background: url(../img/img/rojo.jpg);
+    background-attachment: fixed;
+}
+
+#logo{
+    border: 1px solid #ca2727;
+    background-color: #e63b3b;
+}
+
+#logo:hover{
+    box-shadow: 0px 0px 4px  #fd5555;
+    cursor:pointer; 
+}
+
+#Buscador .icon{
+    color: #ca2727;
+}
+
+
+nav ul li:hover{
+    background-color: #e63b3b;
+}
+
+.badget{
+    border: 1px solid #ca2727;
+    background-color: #e63b3b;
+}
+
+#about h4{
+    background:repeating-linear-gradient(18deg, #ca2727, transparent 1%);
+}
+
+#login h4{
+    background:  repeating-linear-gradient(18deg, #5ca7ec, transparent 1%);
+}
+
+#login form input[type="text"]:focus,
+input[type="password"]:focus{
+
+    background-color: #f2f2f2;
+    border: 1px solid #ca2727;
+    box-shadow: 0px 0px 2px #e63b3b;
+}
