@@ -53,29 +53,19 @@ $(document).ready(function(){
         $('#posts').append(post);
     });  
 
+    //Selector de tema
 
-/*
-    <article class="post">
-    <h2>Titulo del Articulo</h3>
+    $('#to-green').click(function(){
+        $('#theme').attr('href','styles/green.css');
+    });
 
-        <div class="badget">
-            <label>Ver más</label>
-        </div>
+    $('#to-blue').click(function(){
+        $('#theme').attr('href','styles/blue.css');
+    });
 
-     
-        <span>Publicado el martes 15 de diciembre del 2020</span>
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, perspiciatis impedit,
-            molestiae ut placeat corrupti doloremque possimus voluptas, cumque voluptatum et eligendi
-            fugit nobis. Mollitia neque dolor quasi impedit eos.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, perspiciatis impedit,
-            molestiae ut placeat corrupti doloremque possimus voluptas, cumque voluptatum et eligendi
-
-        </p>
-    </article>
-*/
-    
+    $('#to-red').click(function(){
+        $('#theme').attr('href','styles/red.css');
+    })
 
 });
 
