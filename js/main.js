@@ -67,5 +67,26 @@ $(document).ready(function(){
         $('#theme').attr('href','styles/red.css');
     })
 
+
+    //Scroll show event function
+   $(window).scroll(function(e){
+       var scrollTop = $(this).scrollTop();
+      
+       if(scrollTop >= 400)
+        $('#scrollTopButton').fadeIn("slow");
+       else
+        $('#scrollTopButton').fadeOut("slow");
+
+        
+   })
+
+   
+   $('#scrollTopButton').click(function(e){
+       e.preventDefault();
+       $('html, body').animate({
+            scrollTop: 0
+       },500);
+   })
+    
 });
 

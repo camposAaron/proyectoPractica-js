@@ -32,7 +32,7 @@ nav ul li:hover{
 }
 
 #login h4{
-    background:  repeating-linear-gradient(18deg, #5ca7ec, transparent 1%);
+    background:  repeating-linear-gradient(18deg, #ca2727, transparent 1%);
 }
 
 #login form input[type="text"]:focus,
