@@ -42,3 +42,9 @@ input[type="password"]:focus{
     border: 1px solid #ca2727;
     box-shadow: 0px 0px 2px #e63b3b;
 }
+
+#scrollTopButton a{
+    text-decoration:  none;
+    font-size: 16px;
+    color: #eb4646; 
+}
