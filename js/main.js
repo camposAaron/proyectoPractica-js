@@ -70,12 +70,24 @@ $(document).ready(function(){
 
     //Scroll show event function
    $(window).scroll(function(e){
-       var scrollTop = $(this).scrollTop();
-      
-       if(scrollTop >= 400)
+
+    var scrollPercent = 100 * $(window).scrollTop()/($(document).height() - $(window).height());
+    console.log(scrollPercent +'%');
+
+     
+        
+       if(scrollPercent >= 50)
         $('#scrollTopButton').fadeIn("slow");
-       else
+       else{
         $('#scrollTopButton').fadeOut("slow");
+       }if(scrollPercent == 100){
+           $('#scrollTopButton').css('top','75%');
+       }else{
+        $('#scrollTopButton').css('top','93%');
+       }
+      
+       
+    
 
         
    })
@@ -87,6 +99,8 @@ $(document).ready(function(){
             scrollTop: 0
        },500);
    })
+
     
+   
 });
 

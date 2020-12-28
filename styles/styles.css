@@ -165,11 +165,8 @@ nav ul > li > a{
     display: block;
     position: absolute;
     padding: 10px;
-
     font-family: arial;
-    font-size: 12px;
-     
-    border-radius: 10px;
+    font-size: 12px;    
     width: auto;
     color: white;
     height: 10px;
@@ -232,7 +229,7 @@ nav ul > li > a{
 }
 
 #login form{
-    padding: 10px;
+    padding: 5px;
 }
 #login h4 span {
    background-color: white;
@@ -290,9 +287,7 @@ footer #Author{
 }
 
 footer #social{
-   
-    width: 100%;
-    
+    width: 100%;   
 }
 
 footer #Social img{
@@ -355,8 +350,3 @@ footer #Social img{
     cursor: pointer;
 }
 
-#scrollTopButton a{
-    text-decoration:  none;
-    font-size: 16px;
-    color: #29ec81; 
-}
