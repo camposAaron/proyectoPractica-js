@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('.slider').bxSlider({
         auto: true,
         pager: true,
-        speed: 3000
+        speed: 3000 
     });
 
     //Posts storaged in Json array
