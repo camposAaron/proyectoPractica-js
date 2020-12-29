@@ -156,7 +156,7 @@ $(document).ready(function () {
         console.log('Aun no se a cargado el Usuario al localStorage');
     }
 
-
+    
 
 
 });

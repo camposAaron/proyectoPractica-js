@@ -48,3 +48,9 @@ input[type="password"]:focus{
     font-size: 16px;
     color: #eb4646; 
 }
+
+.ui-accordion-header-active{
+    background-color: #ca2727 !important;
+    border-color: #ca2727 !important;
+    
+ }

@@ -48,3 +48,24 @@ input[type="password"]:focus{
     font-size: 16px;
     color: #39a1dd; 
 }
+
+.ui-accordion-header{
+    background-color: #f2f2f2 !important;
+ }
+
+ .ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    font-size: 100%;
+    font-family: arial;  
+}
+
+ /*tab active*/
+ .ui-accordion-header-active{
+    background-color: #278fca !important;
+    border-color: #278fca !important;
+    
+ }
