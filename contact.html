@@ -71,19 +71,27 @@
                <!--Cargar formulario-->
                <h2>Contacto</h2>
                <form>
-                   <label>Nombre</label>
+                   <label for="name">Nombre</label>
                    <input type="text"><br>
-                   <label>Apellidos</label>
+                   <label for="surname">Apellidos</label>
                    <input type="text"><br>
                    <label>Email</label>
-                   <input type="email"><br>
-                   <label>Sexo</label>
-                   <input type="radio" name="gender" value="Masculino"><span>Masculino</span>    
-                   <input type="radio" name="gender" value="Femenino"><span>Femenino</span>
-                   <input type="radio" name="gender" value="Femenino"><span>Otro</span><br>
-                   <label>Fecha de nacimiento</label>
-                   <input type="text" id="calendar">
-                   <label>Edad</label>
+                   <input type="email"><br> 
+                   
+                   <label for="sex">Sexo</label>
+                   <select name="sex">
+                       <option value="Hombre">Hombre</option>
+                       <option value="Mujer">Mujer</option>
+                   </select><br><br>
+               
+                   
+                   <label for="date">Fecha de nacimiento</label>
+                   <input type="text" name="date" id="calendar">
+
+                   <label for="years">Edad</label>
+                   <input type="text" name="years">
+
+                   <input type="submit" value="enviar">
 
 
                </form>

@@ -229,21 +229,22 @@ nav ul{
     margin-bottom: 20px;
 }
 
-#login form{
+ form{
     padding: 5px;
 }
 #login h4 span {
    background-color: white;
 }
 
-#login label{
+form label{
     font-size: 16px;
     font-weight: 500;
     margin-top:10px;
 }
 
-#login form input[type="text"],
-input[type="password"]{
+form input[type="text"],
+input[type="password"],
+input[type="email"]{
     width: 100%;
     margin-top:10px;
     margin-bottom: 10px;
@@ -258,7 +259,7 @@ input[type="password"]{
 
 
 
-#login form input[type="submit"]{
+ form input[type="submit"]{
     background-color: #333;
     cursor: pointer;
     width: 60px;
@@ -393,7 +394,24 @@ footer #Social img{
      text-align: center;
  }
 
+ /*Contact form for contact.html*/
+#box form{
+    width: 80%;
+    padding: 11px;
+}
 
+#box form select{
+    
+    width: 50%;
+    border: none;
+    border: 1px solid #555;
+    height: 30px;
+}
+
+#box form select:focus{
+    border: 1px solid #e63b3b;
+    box-shadow: 0px 0px 1px  #e63b3b;
+}
 
 
 

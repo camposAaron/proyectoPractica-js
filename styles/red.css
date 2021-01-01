@@ -35,8 +35,10 @@ nav ul li:hover{
     background:  repeating-linear-gradient(18deg, #ca2727, transparent 1%);
 }
 
-#login form input[type="text"]:focus,
-input[type="password"]:focus{
+
+form input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus{
 
     background-color: #f2f2f2;
     border: 1px solid #ca2727;
