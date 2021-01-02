@@ -33,4 +33,27 @@ $(document).ready(function(){
     });
     
     $('#calendar').datepicker();
+
+
+
+    //validator 
+    $('#formContact').validate({
+        rules:{
+            years:{
+                required: true,
+                number: true,
+                maxlength:3
+            }
+        },
+        messages:{
+            years:{
+                required: "La edad es requerida",
+                number: "solo se aceptan numeros",
+                maxlength:"solo digitos menores a 3"
+            }
+        }
+        
+    });
+
+   
 });
