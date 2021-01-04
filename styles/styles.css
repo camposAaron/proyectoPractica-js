@@ -413,11 +413,11 @@ footer #Social img{
     box-shadow: 0px 0px 1px  #e63b3b;
 }
 
-.error{
+.errorTxt{
+    display: block;
+    border: 1px solid red;
     font-size: 14px;
     font-family: arial;
-    background-color: red;
-    color: white;
 }
 
 

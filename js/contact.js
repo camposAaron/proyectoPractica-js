@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 
     //validator 
-    $('#formContact').validate({
+   $('#formContact').validate({
         rules:{
             years:{
                 required: true,
@@ -46,14 +46,18 @@ $(document).ready(function(){
             }
         },
         messages:{
-            years:{
-                required: "La edad es requerida",
-                number: "solo se aceptan numeros",
-                maxlength:"solo digitos menores a 3"
-            }
-        }
-        
+            name:"Nombre requerido",
+            email:"Email requerido"
+        },
+        errorElement: 'div',
+        errorLabelContainer:".errorTxt"        
     });
+
+    
+
+
+ 
+
 
    
 });
